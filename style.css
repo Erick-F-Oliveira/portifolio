@@ -1,0 +1,50 @@
+
+#topo{
+  margin-top: 0px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #7ec5fb;
+  text-align: center;
+  
+    
+}
+
+h1{
+  font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 25px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+}
+
+#links{
+   margin-top: 0px;
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: 50vw;
+   
+   text-align: top;  
+   
+  
+}
+
+#botao{
+  border-radius: 40px;
+  border: 0px;
+  background-color: #7ec5fb;
+  width: 100px;
+  height: 25px;
+  font-weight: 700; 
+  padding: 5px;
+  text-align: center;
+  
+}
+#botao:hover{
+  background-color: #348ddf;
+    cursor: pointer;
+    color: #f8f7f1;
+}
+
