@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width">
   <title>Recompensas</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="fonte.css" rel="stylesheet" type="text/css"/>
+
+  <script src="https://kit.fontawesome.com/c82618f9d5.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -12,7 +15,7 @@
   <div id="topo">
     <!--<img src="Capa_server.jpg" width= 100px />-->
     <div id="links">
-      <h4>Discord</h4>
+      <h4><i class="fa-brands fa-discord"></i>Discord</h4>
       <h4>Áudios</h4>
       <h4>Outro</h4>
 
@@ -21,12 +24,13 @@
   </div>
 
   <h3>Digite um codigo especial</h3>
-  <input name="codigo" type="text" placeholder="Digite de 4 a 8 digitos" class="form" id="codi" autocomplete="off" />
+  <input name="codigo" type="text" placeholder="Digite de 4 a 8 digitos" class="form" id="codi"  autocomplete="off" />
   <div><br>
     <input type="button" value="Verificar" id="botao" onclick="cod()" />
-  </div> <br>
-  Recompensa:
-  <div id="reco"></div>
+    <i class="fa-solid fa-star fa-xl   "id="estrela" onclick="cod()"></i>
+  </div>
+    <h5>Recompensa:</h5>
+  <div id="reco"><h6>i</h6></div>
 
 
   <script src="script.js"></script>
