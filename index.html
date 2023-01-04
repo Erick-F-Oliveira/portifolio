@@ -12,16 +12,22 @@
 
 
 <body>
-  <div id="topo">
-    <!--<img src="Capa_server.jpg" width= 100px />-->
-    <div id="links">
-      <h4><i class="fa-brands fa-discord"></i>Discord</h4>
-      <h4>Áudios</h4>
-      <h4>Outro</h4>
-
+  <div id="topo">    
+    <div class="navbar">
+      <a href="#"><h4>Inicio</h4></a>
+      <a href="#"><h4><i class="fa-brands fa-discord"></i>Discord</h4></a>
+      <div class="dropdown">
+        <button class="dropbtn"><h4><i class="fa-solid fa-headphones"></i>Áudios</h4><i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Prólogo</a>
+            <a href="#">Capitulo 1</a>
+            <a href="#">Capitulo 2</a>
+          </div>
+      </div>  
+      </div>
+        <h1>Resgate De Recompensa Campanha Estrela Do Mar</h1>
     </div>
-    <h1>Resgate De Recompensa Campanha Estrela Do Mar</h1>
-  </div>
+  
 
   <h3>Digite um codigo especial</h3>
   <input name="codigo" type="text" placeholder="Digite de 4 a 8 digitos" class="form" id="codi"  autocomplete="off" />
