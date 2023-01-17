@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="styleOficina.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+ 
+  <div>
+     <form action="/action_page.php" id >
+        <label for="tipoItem">Selecione o tipo de item:</label><br>
+          <select id="tipo" name="tipodeItem">
+             <option value="15">Normal</option>
+             <option value="20">Complexo</option>
+             <option value="30">Mag Menor</option>
+             <option value="40">Mag Medio</option>
+             <option value="50">Mag Maior</option>
+         </select>  
+    </form> <br>     
+   
+   <form action="/action_page.php" id >
+     <label for="modif">Selecione a quantidade de mododificações:</label><br>
+     <select id="mod" name="modificacoes">
+       <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>   
+     </select>  
+   </form>  
+    <p>
+   <form action="/action_page.php" id >
+      <label for="encant">Selecione a quantidade de encantamentos:</label><br>
+        <select id="enc" name="Encantamentos">
+           <option value="0">0</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+        </select>  
+   </form> <br>
+
+    <form action="/action_page.php" id >
+      <label for="reduTemp">Gostaria de reduzir o tempo de preparo?</label><br>
+        <select id="redu" name="Reducao">
+           <option value="0">Não</option>
+           <option value="5">Sim</option>
+        </select>  
+   </form> <br> 
+    
+  </div>
+  <input type="button" value="calcular" onclick="cd()"/><br>
+    
+  A CD é:
+  <div id="dificuldade"> CD do item</div>
+
+
+  <script src="scriptOficina.js"></script>
+
+  
+</body>
+
+</html>

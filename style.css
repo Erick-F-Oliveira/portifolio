@@ -63,13 +63,13 @@ h1{
 }
 
 #estrela{
-  color: #1b18cd;
+  color: rgb(12, 10, 133);
   
  
 }
 
 #estrela:hover{
-  color: #7eb1de;
+  color: rgb(65, 79, 172);
   cursor: pointer;
   z-index: 99;
    
@@ -82,11 +82,12 @@ h1{
   padding: 2px;
   text-align: center;
   color: #ffffff;
+  border: 0px 
   
   
 }
  .form placeholder{
-   color: #000000;
+   color: #e82121;
  }
 
 /*---------------------------------------------------*/
