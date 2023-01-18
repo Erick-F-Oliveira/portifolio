@@ -2,3 +2,8 @@
   padding: 20px;
   background-color: #ececd0; 
 }
+
+footer{
+  position: absolute;
+  bottom: 10px;
+}
