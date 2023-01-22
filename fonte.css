@@ -2,7 +2,10 @@
     font-family: Tormenta;
     src: url(Tormenta20x.ttf);
   }
-
+@font-face {
+    font-family: Raizen;
+    src: url(Raizen.otf);
+  }
 h1,h2,h3,h4,h5,h6{
   font-family: Tormenta;
   }

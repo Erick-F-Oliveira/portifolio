@@ -6,62 +6,128 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="styleOficina.css" rel="stylesheet" type="text/css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 
 <body>
- 
-  <div>
+    <nav class="navbar" style="background-color: #f1f1f1;">
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+  </ul>
+ </nav>
+
+  <div id="conteudo">
+    <div>
+       <form action="/action_page.php" id >
+          <label for="tipoItem"><h5>Selecione o tipo de item:</h5></label><br>
+            <select id="tipo" name="tipodeItem">
+               <option value="15">Normal</option>
+               <option value="20">Complexo</option>
+               <option value="30">Mag Menor</option>
+               <option value="40">Mag Medio</option>
+               <option value="50">Mag Maior</option>
+           </select>  
+      </form> <br>     
+     
      <form action="/action_page.php" id >
-        <label for="tipoItem">Selecione o tipo de item:</label><br>
-          <select id="tipo" name="tipodeItem">
-             <option value="15">Normal</option>
-             <option value="20">Complexo</option>
-             <option value="30">Mag Menor</option>
-             <option value="40">Mag Medio</option>
-             <option value="50">Mag Maior</option>
-         </select>  
-    </form> <br>     
-   
-   <form action="/action_page.php" id >
-     <label for="modif">Selecione a quantidade de modificações:</label><br>
-     <select id="mod" name="modificacoes">
-       <option value="0">0</option>
-       <option value="1">1</option>
-       <option value="2">2</option>
-       <option value="3">3</option>
-       <option value="4">4</option>
-         
-     </select>  
-   </form>  
-    <p>
-   <form action="/action_page.php" id >
-      <label for="encant">Selecione a quantidade de encantamentos:</label><br>
-        <select id="enc" name="Encantamentos">
-           <option value="0">0</option>
-           <option value="1">1</option>
-           <option value="2">2</option>
-           <option value="3">3</option>
-        </select>  
-   </form> <br>
+       <label for="modif"><h5>Selecione a quantidade de modificações:</h5></label><br>
+       <select id="mod" name="modificacoes">
+         <option value="0">0</option>
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+           
+       </select>  
+     </form>  
+      <p>
+     <form action="/action_page.php" id >
+        <label for="encant"><h5>Selecione a quantidade de encantamentos:</h5></label><br>
+          <select id="enc" name="Encantamentos">
+             <option value="0">0</option>
+             <option value="2">1</option>
+             <option value="3">2</option>
+             <option value="4">3</option>
+          </select>  
+     </form> <br>      
+      
+    </div>
+    <input type="button" value="calcular" onclick="cd()"/><br>
+      
+    <h6>A CD é:</h6>
+    <div id="dificuldade"><h6>CD do item</h6></div>
 
    
-    
   </div>
-  <input type="button" value="calcular" onclick="cd()"/><br>
-    
-  A CD é:
-  <div id="dificuldade"> CD do item</div>
+ <div id="others">
+    <footer class="text-center text-dark" style="background-color: rgba(0, 0, 0, 0.4);">
+  
+  <!-- Copyright -->
+  <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+    <h5>Site ainda em construção para uso dos jogadores do servidor <a href="https://discord.gg/8Kg8aWy" target="_blank">Area de RPG</a></h5>
+    <h6><span>Tormenta</span><span id="span2">20</span> é uma propriedade de <a href="https://jamboeditora.com.br/" target="_blank">Jambo Editora</a></h6>
+      </div>
+  <!-- Copyright -->
+      <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <h5 style="color: #ffff;">Erick Ferreira de Oliveira</h5>
+    <section class="mb-4">
+      <!-- Discord -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="bi bi-discord" data-bs-toggle="tooltip" data-bs-placement="left" title="Obernac#9302"></i
+      ></a>
+        
 
-
-<footer>
-  <div>
-    <h6>Site ainda em Beta</h6>
-    <h6>Tormenta20 é propriedade da <a href="#" >Jambo Editora</a></h6>
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="bi bi-linkedin"></i></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="https://github.com/Erick-F-Oliveira" target="_blank"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="bi bi-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
   </div>
+  <!-- Grid container -->
+
 </footer>
+  </div>
+  
 
 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src="scriptOficina.js"></script>
 
   

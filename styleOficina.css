@@ -1,9 +1,38 @@
- body {
-  padding: 20px;
-  background-color: #ececd0; 
+@font-face {
+    font-family: Tormenta;
+    src: url(Tormenta20x.ttf);
+  }
+
+@font-face {
+    font-family: Raizen;
+    src: url(Raizen.otf);
+  }
+
+
+
+select{
+  border-radius: 10px;
+  text-align: center;
 }
 
-footer{
-  position: absolute;
-  bottom: 10px;
+span{
+  color: #d82926;
+  font-family: Tormenta;
+  font-weight: 600;
 }
+#span2{
+  color: #EA9E0A;
+}
+#conteudo{
+   background-image: url(bg.jpg);
+   background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+
+footer a{
+  font-family: Raizen;
+  text-decoration: none;
+  }
+
