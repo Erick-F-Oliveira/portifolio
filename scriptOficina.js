@@ -10,6 +10,7 @@ function cd(){
   var r =''
   var res = document.getElementById('dificuldade')
   r = ((m + e) * 5 + t)
+  res.style.fontWeight= "700"
   res.innerHTML = ` ${r}`
   
   }
