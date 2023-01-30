@@ -40,7 +40,7 @@ span{
 }
 #conteudo{
    background-image: url(bg.jpg);
-   background-size: 100%;
+   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 30px;
 }
