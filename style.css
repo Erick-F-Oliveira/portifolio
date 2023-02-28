@@ -1,5 +1,5 @@
 body{
- background-image: linear-gradient(#0c0a85,#acdafa);
+ background-image: linear-gradient(#0c0a85,#acdafa,#0c0a85);
   
 }
 
@@ -71,23 +71,20 @@ h1{
 #estrela:hover{
   color: rgb(65, 79, 172);
   cursor: pointer;
-  z-index: 99;
-   
+  transform: scale(1.2);
+  filter: drop-shadow(.60em .60em .3em);
 }
-.form{
-  
+.form{  
   font-family: verdana;
   background-color: transparent;
   border-radius: 20px;
   padding: 2px;
   text-align: center;
-  color: #ffffff;
-  border: 0px 
-  
-  
+  color: #000000;
+  border: 0px   
 }
- .form placeholder{
-   color: #e82121;
+placeholder{
+   color: #080808;
  }
 
 /*---------------------------------------------------*/
